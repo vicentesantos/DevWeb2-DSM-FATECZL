@@ -1,0 +1,38 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    color: black;
+}
+#h1{
+    font-size: 28pt;
+    font-style: oblique;
+}
+#table{
+    background-color: #f2f2f2;
+    margin: 50px;
+    padding: 25px;
+}
+#title1, #title2, #title3, #title4, #title5{
+    padding: 10px 40px;
+    text-align: center;
+}
+#title1{
+    background-color: lightgray;
+}
+#title2{
+    background-color:lightgreen;
+}
+#title3{
+    background-color:lightcoral;
+}
+#title4{
+    background-color: lightsalmon;
+}
+#title5{
+    background-color: lightyellow;
+}
+.linhas td{
+    padding: 10px 40px;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
