@@ -1,0 +1,43 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+}
+#formulario{
+    background-color:lightyellow;
+    width: 75em;
+    height: 40em;
+}
+#title{
+    font-size: 24pt;
+    text-align: center;
+    padding-top: 25px;
+}
+#title2{
+    font-size: 14pt;
+    text-align: center;
+}
+input{/*Formulário*/
+    width: 50%;
+    height: 2em;
+    background-color: white;
+    color: #000;
+    border: solid 1px #000;
+    margin-left: 50px;
+}
+label{
+    margin-left: 50px;
+    font-size: 13pt;
+}
+#mensagem{
+    height: 10em;
+}
+input[type=submit]{
+    width: 10%;
+    height: 2em;
+    background-color:aliceblue;
+    margin: 1% 5%;
+}
+.required:after{
+    content:"*";
+    color: red;
+}
