@@ -1,0 +1,14 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "teste",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vicente",
+  "license": "ISC",
+  "dependencies": {
+    "mysql2": "^2.3.2"
+  }
+}
