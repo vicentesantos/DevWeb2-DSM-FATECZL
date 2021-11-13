@@ -1,5 +1,5 @@
 const Sequelize = require('sequelize');
-const database = require('./dborm');
+const database = require('../../../Conexão BD/model/services/dborm');
 
 const Cliente = database.sequelize.define('cliente', {
     id:{

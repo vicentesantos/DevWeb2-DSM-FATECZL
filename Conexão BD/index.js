@@ -1,3 +1,24 @@
+const express = require('express');
+//npm i express-session
+const expressSession = require('express-session');
+//npm install consign
+var consign = require('consign');
+var path = require('path');
+const app = express();
+app.set('views', './src/views');
+
+consign().include('controller/routes')
+    .then('controller')
+    .then('model/entities')
+    .then('model/components')
+    .then('models/services')
+    .then('model/repositories')
+    .into(app);
+
+app.listen(8081, function(){
+    console.info("Servidor Funcionando");
+});
+
 /*(async() => {
     
     const db = require("./db");
@@ -21,9 +42,9 @@
 
 })();*/
 
-(async () =>{
+/*(async () =>{
     const database = require('./dborm');
-    const Cliente = require('./cliente');
+    const Cliente = require('./model/entities/cliente');
     
     console.log('Criar tabela =========');
     const resultado = await database.sequelize.sync();
@@ -54,4 +75,4 @@
     console.log('Deletar registro ===========');
     const clienteDelete = await Cliente.findByPk(1);
     clienteDelete.destroy();
-})();
+})();*/
